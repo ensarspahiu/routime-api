@@ -13,8 +13,6 @@ app.use(cors());
 
 app.post('/send-email', (req, res) => {
     const { name, email, comment } = req.body;
-
-    // Nodemailer setup
     const transporter = nodemailer.createTransport({
         host: 'smtps.udag.de',
         port: 465,
