@@ -27,7 +27,7 @@ app.post('/send-email', (req, res) => {
 
     const mailOptions = {
         from: 'sender@routime.de',
-        to: 'dorantdushi@gmail.com',
+        to: 'info@routime.de',
         subject: 'Contact Us Form Submission from Website',
         text: `From: ${email}\n\nName: ${name}\n\nComment: ${comment}`,
         replyTo: email
